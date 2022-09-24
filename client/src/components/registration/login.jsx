@@ -7,7 +7,7 @@ const Login=()=>{
     const [user, setUser]=useState({});
     const login =(e)=>{
         e.preventDefault();
-        axios.post("https://real-project.herokuapp.com/login",user)
+        axios.post("https://realstate10x.herokuapp.com/login",user)
         .then(res=>{
             const temp=(res.data.user.email).split("@");
             const name=temp[0];

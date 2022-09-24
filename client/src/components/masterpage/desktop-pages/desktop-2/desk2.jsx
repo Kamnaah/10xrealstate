@@ -110,7 +110,7 @@ const Desk2 = () => {
                                                     if(page ===formPages.length-1){
                                                            alert("Form Submitted")
                                                             console.log(formData);
-                                                        const res=await fetch("https://real-project.herokuapp.com/form",{
+                                                        const res=await fetch("https://realstate10x.herokuapp.com/form",{
                                                             method:"POST",
                                                             headers:{
                                                             "Content-Type":"application/json",

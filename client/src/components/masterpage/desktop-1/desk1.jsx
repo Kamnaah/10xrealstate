@@ -15,7 +15,7 @@ const Desk1 = () => {
         }
     }
     useEffect(() => {
-        axios.get("https://real-project.herokuapp.com/form",d1).then((respond) => {
+        axios.get("https://realstate10x.herokuapp.com/form",d1).then((respond) => {
             setPost(respond.data);
         })
     }, []);

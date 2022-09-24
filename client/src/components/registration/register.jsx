@@ -10,7 +10,7 @@ const Register=()=>{
         const {email,password,cpassword}=user;
         if(email && password && password===cpassword){
            // alert("posted")
-            axios.post("https://real-project.herokuapp.com/register",user)
+            axios.post("https://realstate10x.herokuapp.com/register",user)
             .then(res=>{
                 // console.log(res.status)
                 alert(res.data.message)
