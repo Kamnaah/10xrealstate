@@ -2,6 +2,7 @@ import './login.css';
 import { useState } from 'react';
 import {useNavigate} from 'react-router-dom';
 import axios from "axios";
+import { Link } from 'react-router-dom';
 const Register=()=>{
     const navigator=useNavigate();
     const [user, setUser]=useState({});
@@ -38,7 +39,7 @@ const Register=()=>{
                 </form>
             </div>
             <div className='addition'>
-            <a href='/'>Sign in</a>
+            <Link to='/'>Sign in</Link>
             </div>
         </div>
         </>

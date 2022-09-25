@@ -2,6 +2,7 @@ import './login.css';
 import { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const Login=()=>{
     const navigate=useNavigate();
     const [user, setUser]=useState({});
@@ -31,11 +32,11 @@ const Login=()=>{
                     <input className='login-input' onChange={(e)=>setUser({...user,password:e.target.value})} type="password" placeholder="Password" name="password" required/>
                     <button className='login-btn'  onClick={login} type="submit">Sign In</button>
                 </form>
-                <div id='login-a'><a id="anchor" href="/register">Sign Up</a></div>
+                {/* <div id='login-a'><a id="anchor" href="/register">Sign Up</a></div> */}
             </div>
             <div className='addition'>
                 <pre>Don't have an account?</pre>
-                <a href='/register'>Sign up</a>
+                <Link to='/register'>Sign up</Link>
             </div>
         </div>
         </>
